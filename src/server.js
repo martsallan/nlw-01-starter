@@ -10,14 +10,12 @@ server.use(express.static("public"))
 // habilitar o uso do req.body na nossa aplicação
 server.use(express.urlencoded({extended: true}))
 
-
 // utilizando template engine
 const nunjucks = require("nunjucks")
 nunjucks.configure("src/views", {
     express: server,
     noCache: true
 })
-
 
 // configurar caminhos da minha aplicação
 // pagina inicial
@@ -65,7 +63,8 @@ server.post("/savepoint",(req,res) => {
     function afterInsertData(err){
         if(err){
             console.log(err)
-            return res.send("Erro no cadastro!")
+            // return res.send("Erro no cadastro!")
+            return res.render("create-point.html",{error:true})
         }
         console.log("Cadastrado com sucesso")
         console.log(this)

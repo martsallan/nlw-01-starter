@@ -99,6 +99,9 @@
 {% endblock content %}
 
 {% block modal %}
+    {% if error %}
+        {%include "partials/registration-error.html"%}
+    {% endif %}
     {% if saved %}
         {%include "partials/point-created.html"%}
     {% endif %}
