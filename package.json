@@ -2,9 +2,9 @@
   "name": "nlw1",
   "version": "1.0.0",
   "description": "Este curso foi ministrado pela [Rocketseat](https://rocketseat.com.br/) em uma semana de duração, afim de apresentar as tecnologias usadas atualmente para criação de websites, separadas por duas trilhas de estudo. Nesta trilha #Starter foram utilizadas as seguintes tecnologias:\r <br>\r - [HTML/CSS/Javascript](#)\r - [Node.js](https://nodejs.org/en/)\r - [Express](https://expressjs.com/pt-br/)\r - [SQLite](https://www.sqlite.org/index.html)\r - [Nunjucks](https://mozilla.github.io/nunjucks/)",
-  "main": "node src/server.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
