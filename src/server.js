@@ -104,6 +104,6 @@ server.get("/search", (req, res) => {
     
 })
 
-// ligar o servidor
-server.listen(process.env.PORT || 3000);
-//server.listen(3000)
+// turn on server
+server.listen(process.env.PORT || 3000); //server port or local port
+//server.listen(3000) //only local
