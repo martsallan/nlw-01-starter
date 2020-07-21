@@ -1,82 +1,66 @@
-@media (max-width:900px) {
-    #page-home {
+@media (max-width:900px){
+    #page-home{
         background-position-x: 70vw;
     }
-
-    #page-home .content {
+    #page-home .content{
         align-items: center;
         text-align: center;
 
     }
-
-    #page-home header a {
-        position: absolute;
-        bottom: 48px;
+    #page-home header a{
+        position:fixed;
+        bottom: 1px;
         left: 50%;
         transform: translateX(-50%);
     }
-
-    #page-home main {
+    #page-home main{
         align-items: center;
     }
-
-    #page-search-results .cards {
+    #page-search-results .cards{
         grid-template-columns: 1fr;
     }
-
-    #page-search-results .cards img {
+    #page-search-results .cards img{
         height: 250px;
     }
-
-    #page-create-point .field-group {
+    #page-create-point .field-group{
         flex-direction: column;
     }
-
-    #page-create-point .field-group .field+.field {
+    #page-create-point .field-group .field + .field{
         margin-left: 0;
     }
 }
 
-@media (min-width: 1700px) {
-    #page-home {
+@media (min-width: 1700px){
+    #page-home{
         background-position-x: 40vw;
     }
 }
 
-@media (max-height: 760px) {
-    #page-home {
+@media (max-height: 760px){
+    #page-home{
         background-position-y: 200px;
     }
-}
-
-@media (max-height: 690px) {
-    #page-home header a {
-        top: 650px;
+    #page-home main h1{
+        font-size: 40px;
     }
-}
-
-@media (max-height: 760px) {
-    #page-home header a {
-        top: 690px;
+    #page-home main p{
+        font-size: 18px;
     }
-}
-
-@media (max-height: 800px) {
-    #page-home header a {
-        position: absolute;
-        bottom: 48px;
-        justify-content: center
+    #page-home main a{
+        width: 80%;
+        max-width: 360px;
+        height: 60px;
     }
-}
-
-@media(max-width: 415px) {
+    #page-home main a span{
+        width: 60px;
+        height: 60px;
+    }
     #page-home header a span {
-        width: 13%
+        margin-right: 14px;
+        width: 18px;
+        height: 18px;
     }
-}
-
-@media(max-width: 365px) {
-    #page-home header a span {
-        width: 18%
+    #page-home header a {
+        font-size: 12px;
     }
 }
